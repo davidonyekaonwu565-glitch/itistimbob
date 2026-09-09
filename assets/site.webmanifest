@@ -1,0 +1,19 @@
+{
+  "name": "ItsTimbob — Live Reactions, Sports, Slots & Community",
+  "short_name": "ItsTimbob",
+  "icons": [
+    {
+      "src": "assets/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#040405",
+  "background_color": "#040405",
+  "display": "standalone"
+}

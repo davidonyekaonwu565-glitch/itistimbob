@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#040405">
+  <title>ItsTimbob — Live Reactions, Sports, Slots &amp; Community</title>
+  <meta name="description" content="ItsTimbob — sports betting, live reactions, slots &amp; community entertainment. Streamed live. Everyone using my affiliation link gets VIP host treatment and 10% uncapped lossback on WTF Games.">
+  <meta property="og:title" content="ItsTimbob — Live Streams &amp; VIP Host">
+  <meta property="og:description" content="Sports, reactions, slots &amp; community entertainment — live. Everyone using my link gets VIP host treatment.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ItsTimbob — Live Streams &amp; VIP Host">
+  <meta name="twitter:description" content="Sports, reactions, slots &amp; community entertainment — live.">
+
+  <!-- Favicon & Mobile Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Exact Google Fonts from Reference: Bungee, Inter, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="grid-bg">
+
+  <!-- ==========================================================================
+       HEADER NAVIGATION (With Animated Underline Interaction)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="logo" aria-label="ItsTimbob home">
+        <span class="logo-badge">
+          IT
+          <span class="logo-live-dot animate-live-dot"></span>
+        </span>
+        <span class="logo-text">ITS<span class="volt">TIMBOB</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu with Smooth Animated Underlines -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#streams" class="nav-link">Streams<span class="nav-underline"></span></a></li>
+          <li><a href="#about" class="nav-link">About<span class="nav-underline"></span></a></li>
+          <li><a href="#what-i-do" class="nav-link">Content<span class="nav-underline"></span></a></li>
+          <li><a href="#vip-host" class="nav-link">VIP Host<span class="nav-underline"></span></a></li>
+          <li><a href="#your-players" class="nav-link">Your Players<span class="nav-underline"></span></a></li>
+          <li><a href="#growth" class="nav-link">Growth<span class="nav-underline"></span></a></li>
+          <li><a href="#commission" class="nav-link">Commission<span class="nav-underline"></span></a></li>
+          <li><a href="#socials" class="nav-link">Socials<span class="nav-underline"></span></a></li>
+          <li><a href="#faq" class="nav-link">FAQ<span class="nav-underline"></span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="javascript:void(0)" data-config-link="wtf" class="btn btn-volt btn-sm">
+          Join WTF Games
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link"><span>Home</span> <span>&rarr;</span></a></li>
+      <li><a href="#streams" class="mobile-nav-link"><span>Streams</span> <span>&rarr;</span></a></li>
+      <li><a href="#about" class="mobile-nav-link"><span>About</span> <span>&rarr;</span></a></li>
+      <li><a href="#what-i-do" class="mobile-nav-link"><span>What I Do</span> <span>&rarr;</span></a></li>
+      <li><a href="#vip-host" class="mobile-nav-link"><span>VIP Host (70%)</span> <span>&rarr;</span></a></li>
+      <li><a href="#your-players" class="mobile-nav-link"><span>Your Players (WTF)</span> <span>&rarr;</span></a></li>
+      <li><a href="#growth" class="mobile-nav-link"><span>Growth &amp; Upside</span> <span>&rarr;</span></a></li>
+      <li><a href="#commission" class="mobile-nav-link"><span>Commission</span> <span>&rarr;</span></a></li>
+      <li><a href="#socials" class="mobile-nav-link"><span>Socials</span> <span>&rarr;</span></a></li>
+      <li><a href="#faq" class="mobile-nav-link"><span>FAQ</span> <span>&rarr;</span></a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="javascript:void(0)" data-config-link="wtf" class="btn btn-volt btn-lg" style="width: 100%; margin-bottom: 16px;">
+        Join WTF Games
+      </a>
+      <div style="display: flex; justify-content: center; gap: 16px;">
+        <a href="https://twitch.tv/itstimbob" data-config-link="twitch" style="color: #9146ff;" aria-label="Twitch">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M2.149 0l-1.612 4.119v16.8h5.626v3.081h3.216l3.076-3.081h4.685l6.86-6.861v-14.058h-21.845zm19.704 13.023l-3.854 3.857h-5.143l-3.076 3.081v-3.081h-4.685v-14.739h16.758v10.882zm-4.143-6.574h-2.143v6.172h2.143v-6.172zm-6.143 0h-2.143v6.172h2.143v-6.172z"/></svg>
+        </a>
+        <a href="https://discord.gg/hKkG9NxuEg" data-config-link="discord" style="color: #5865f2;" aria-label="Discord">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+        </a>
+        <a href="https://t.me/+GjSgJUK0AUYxNmZh" data-config-link="telegram" style="color: #229ed9;" aria-label="Telegram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.537-.194 1.006.128.832.943z"/></svg>
+        </a>
+        <a href="https://x.com/ItsTimbob" data-config-link="x" style="color: #ffffff;" aria-label="X">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION (With 2. Animated Status Rotator)
+       ========================================================================== -->
+  <section class="section hero-section" id="home">
+    <div class="hero-bg-blobs">
+      <div class="hero-blob-1"></div>
+      <div class="hero-blob-2"></div>
+      <div class="hazard-stripes hero-hazard-bottom opacity-40"></div>
+      <div class="hazard-stripes hero-hazard-top opacity-30"></div>
+    </div>
+
+    <div class="container hero-center">
+      
+      <!-- HERO TOP STATUS ROW (ORIGINAL ITSTIMBOB REFERENCE STRUCTURE) -->
+      <div class="hero-status-pill reveal" id="heroStatusPill">
+        <!-- Dot (Refined Neon Yellow/Gold #c9ff30) -->
+        <span class="status-indicator-dot" id="statusDot"></span>
+
+        <!-- LEFT SIDE: DYNAMIC STREAM STATUS (Smoothly cycles through 4 phrases) -->
+        <div class="status-rotator-wrap" id="statusRotator">
+          <div class="status-rotator-item active">I’M STREAMING</div>
+          <div class="status-rotator-item">LIVE NOW</div>
+          <div class="status-rotator-item">SPORTS &amp; RECREATION</div>
+          <div class="status-rotator-item">SLOTS &amp; GIVEAWAYS</div>
+        </div>
+
+        <!-- Vertical Divider -->
+        <span class="status-divider" id="statusDivider"></span>
+
+        <!-- RIGHT SIDE: OFF-AIR STATUS (Gamepad icon + OFF AIR — BACK SOON) -->
+        <div class="hero-status-offline" id="heroStatusOffline">
+          <svg class="gamepad-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="6" x2="10" y1="11" y2="11"></line>
+            <line x1="8" x2="8" y1="9" y2="13"></line>
+            <line x1="15" x2="15.01" y1="12" y2="12"></line>
+            <line x1="18" x2="18.01" y1="10" y2="10"></line>
+            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+          </svg>
+          <span class="status-fixed-text">OFF AIR &mdash; BACK SOON</span>
+        </div>
+      </div>
+
+      <!-- STREAMER BRAND DESCRIPTION (Clean, Crisp, Light with Subtle Zap Icon) -->
+      <div class="hero-streamer-desc reveal delay-1">
+        <svg class="hero-streamer-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+        </svg>
+        <span>LIVE STREAMER &bull; COMMUNITY ENTERTAINMENT</span>
+      </div>
+
+      <!-- The Iconic Bungee Graffiti Headline -->
+      <h1 class="hero-graffiti-title reveal delay-1">
+        <span>ITS</span><span class="volt glow-brand-text">TIMBOB</span>
+      </h1>
+
+      <!-- The Hand-drawn squiggly neon underline -->
+      <div class="hero-squiggly-wrap reveal delay-2">
+        <svg viewBox="0 0 320 8" style="width: 100%; height: 8px;" preserveAspectRatio="none">
+          <path d="M2 5 C 40 1, 80 7, 120 3 S 200 6, 260 2 S 310 5, 318 3" fill="none" stroke="#c2ff00" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+        </svg>
+      </div>
+
+      <!-- Core Tagline / Subtitle -->
+      <p class="hero-description reveal delay-2">
+        Sports, reactions, slots &amp; community entertainment &mdash; live. Real-time takes, a chat that talks back, and a community that keeps showing up.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions reveal delay-3">
+        <a href="#streams" class="btn btn-volt btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Watch Me Live
+        </a>
+        <a href="#vip-host" class="btn btn-gold btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          Become a VIP
+        </a>
+        <a href="javascript:void(0)" data-config-link="wtf" class="btn btn-ghost btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          Join WTF Games
+        </a>
+      </div>
+
+      <!-- Reference 3-Pill Stat Bar -->
+      <div class="hero-stats-row reveal delay-4">
+        <div class="hero-stat-box">
+          <div class="hero-stat-val">3x</div>
+          <div class="hero-stat-lbl">Streams / week</div>
+        </div>
+        <div class="hero-stat-box">
+          <div class="hero-stat-val">24/7</div>
+          <div class="hero-stat-lbl">Community chat</div>
+        </div>
+        <div class="hero-stat-box">
+          <div class="hero-stat-val" style="color: var(--brand-400);">VIP</div>
+          <div class="hero-stat-lbl">Host treatment</div>
+        </div>
+      </div>
+
+      <!-- Subtle Hero Downward Chevron (Scroll Indicator) -->
+      <div class="hero-scroll-cue reveal delay-4">
+        <a href="#streams" class="hero-scroll-link" aria-label="Scroll to next section">
+          <svg class="hero-scroll-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INFINITE STREAM MARQUEE TICKER (Inspired by Grace Daniyan Portfolio)
+       ========================================================================== -->
+  <div class="stream-marquee-wrap" aria-hidden="true">
+    <div class="stream-marquee-track">
+      <div class="stream-marquee-content">
+        <span class="marquee-item"><span class="marquee-dot"></span>LIVE ON TWITCH</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag volt">70%</span>COMMISSION RETURN</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag gold">10%</span>WTF LOSSBACK</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>SPORTS &amp; RECREATION</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag volt">VIP</span>HOST TREATMENT</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>SLOTS &amp; GIVEAWAYS</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag gold">24/7</span>COMMUNITY CHAT</span>
+        <span class="marquee-sep">&bull;</span>
+      </div>
+      <div class="stream-marquee-content" aria-hidden="true">
+        <span class="marquee-item"><span class="marquee-dot"></span>LIVE ON TWITCH</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag volt">70%</span>COMMISSION RETURN</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag gold">10%</span>WTF LOSSBACK</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>SPORTS &amp; RECREATION</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag volt">VIP</span>HOST TREATMENT</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>SLOTS &amp; GIVEAWAYS</span>
+        <span class="marquee-sep">&bull;</span>
+        <span class="marquee-item"><span class="marquee-tag gold">24/7</span>COMMUNITY CHAT</span>
+        <span class="marquee-sep">&bull;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STREAMS SECTION (Catch the stream live)
+       ========================================================================== -->
+  <section class="section" id="streams">
+    <div class="container">
+      
+      <div class="section-header center reveal">
+        <span class="section-eyebrow">Currently Streaming</span>
+        <h2 class="section-title">Catch the stream <span>live</span></h2>
+        <p class="section-subtitle">
+          Gameday reactions, community banter, and the slots grind &mdash; all in one place.
+        </p>
+      </div>
+
+      <!-- 1. STREAM PREVIEW CARD (Aspect Video, Status Badge, Categories, Be The First, Watch Live + Get Notified) -->
+      <div class="stream-preview-card reveal delay-1">
+        <div class="stream-embed-box">
+          <div class="stream-bg-ambient"></div>
+
+          <!-- STREAM TOP BAR: SINGLE STATUS BADGE -->
+          <div class="stream-top-bar">
+            <!-- TWITCH LIVE / OFFLINE STATUS BADGE -->
+            <div class="stream-live-pill offline" id="streamStatusBadge">
+              <span class="stream-status-dot offline" id="streamStatusDot"></span>
+              <span id="streamStatusText">Offline</span>
+            </div>
+          </div>
+
+          <!-- CENTER: PLAY / WATCH PROMPT -->
+          <a href="https://twitch.tv/itstimbob" data-config-link="twitch" class="stream-center-btn" aria-label="Watch live on Twitch">
+            <div class="stream-play-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <span class="stream-center-prompt" id="streamCenterPrompt">
+              Stream is offline &mdash; check the schedule below
+            </span>
+          </a>
+
+          <!-- BOTTOM CARD OVERLAY: TITLE, CATEGORIES, BE THE FIRST -->
+          <div class="stream-overlay-bottom">
+            <div class="stream-overlay-meta">
+              <h3 class="stream-overlay-title" id="streamOverlayTitle">Gameday Reactions &mdash; Sunday Slate Live</h3>
+              <p class="stream-overlay-category" id="streamOverlayCategory">Sports &amp; Reactions &bull; Slots &amp; Giveaways</p>
+            </div>
+            <div class="stream-overlay-stats">
+              <!-- BE THE FIRST CHIP (from original website) -->
+              <span class="stream-stat-chip be-first-chip" id="streamViewerChip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-volt">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+                <span id="streamViewerText">Be the first</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. WATCH LIVE + GET NOTIFIED CTA BAR -->
+        <div class="stream-bar-bottom">
+          <div class="stream-channel-profile">
+            <div class="stream-avatar-badge">IT</div>
+            <div>
+              <div class="stream-creator-name">
+                ItsTimbob
+                <span class="stream-verified-badge" title="Verified Creator">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </span>
+              </div>
+              <p class="stream-creator-sub">Sports &bull; Reactions &bull; Slots &bull; WTF Games Partner</p>
+            </div>
+          </div>
+
+          <!-- PROMINENT CTAs: WATCH LIVE + GET NOTIFIED -->
+          <div class="stream-cta-buttons">
+            <a href="https://twitch.tv/itstimbob" data-config-link="twitch" class="btn btn-volt btn-md">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.149 0l-1.612 4.119v16.8h5.626v3.081h3.216l3.076-3.081h4.685l6.86-6.861v-14.058h-21.845zm19.704 13.023l-3.854 3.857h-5.143l-3.076 3.081v-3.081h-4.685v-14.739h16.758v10.882zm-4.143-6.574h-2.143v6.172h2.143v-6.172zm-6.143 0h-2.143v6.172h2.143v-6.172z"/></svg>
+              Watch Live
+            </a>
+            <a href="#socials" data-notify-btn class="btn btn-ghost btn-md">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+              Get Notified
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. BE THE FIRST CALLOUT BANNER -->
+      <div class="be-first-banner reveal delay-2">
+        <div class="be-first-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-volt">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <div class="be-first-content">
+          <h4 class="be-first-title">Be the first when ItsTimbob goes live</h4>
+          <p class="be-first-desc">Follow on Twitch, turn on channel notifications, and join the Discord community so you never miss a kickoff, buzzer-beater, or bonus round.</p>
+        </div>
+        <div class="be-first-action">
+          <a href="https://discord.gg/hKkG9NxuEg" data-config-link="discord" class="btn btn-ghost btn-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            Join Discord
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. STREAM SCHEDULE (Tuesday, Thursday, Sunday — All times PST) -->
+      <div class="stream-schedule-wrap reveal delay-3">
+        <div class="schedule-header">
+          <div class="schedule-title-group">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-volt"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            <h3 class="schedule-title">Stream Schedule</h3>
+          </div>
+          <span class="schedule-divider-line"></span>
+          <span class="schedule-tz-badge">All times PST</span>
+        </div>
+
+        <!-- NEXT UPCOMING STREAM LIVE COUNTDOWN BANNER -->
+        <div class="next-stream-banner" id="nextStreamBanner">
+          <div class="next-stream-glow"></div>
+          <div class="next-stream-content">
+            <div class="next-stream-meta-col">
+              <div class="next-stream-badge-row">
+                <span class="next-stream-dot" id="nextStreamDot"></span>
+                <span class="next-stream-badge" id="nextStreamBadge">NEXT STREAM</span>
+                <span class="schedule-highlight-badge next-stream-featured" id="nextStreamFeatured">FEATURED</span>
+              </div>
+              <div class="next-stream-details">
+                <div class="next-stream-title-row">
+                  <span class="next-stream-day" id="nextStreamDay">Sunday</span>
+                  <span class="next-stream-dash">&mdash;</span>
+                  <span class="next-stream-time" id="nextStreamTime">12 PM PST</span>
+                </div>
+                <div class="next-stream-topic-row">
+                  <span class="next-stream-topic" id="nextStreamTopic">Game Day</span>
+                  <span class="next-stream-sep">&bull;</span>
+                  <span class="next-stream-tz">All times PST</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="next-stream-timer-col">
+              <div class="next-stream-timer-header">
+                <span class="next-stream-timer-label" id="nextStreamTimerLabel">STREAM STARTS IN</span>
+              </div>
+              <div class="next-stream-readout">
+                <span class="next-stream-countdown" id="nextStreamCountdown">2D 08H 24M</span>
+                <span class="next-stream-secs" id="nextStreamSecs">00S</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Cards Grid (Tuesday, Thursday, Sunday — All times PST) -->
+        <div class="schedule-grid">
+          
+          <!-- Tuesday -->
+          <div class="schedule-card">
+            <div class="schedule-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-volt"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <div class="schedule-card-body">
+              <span class="schedule-card-day">Tuesday</span>
+              <p class="schedule-card-time">3:00 PM PST</p>
+              <p class="schedule-card-label">Recreation &amp; Takes</p>
+            </div>
+          </div>
+
+          <!-- Thursday -->
+          <div class="schedule-card">
+            <div class="schedule-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-volt"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <div class="schedule-card-body">
+              <span class="schedule-card-day">Thursday</span>
+              <p class="schedule-card-time">3:00 PM PST</p>
+              <p class="schedule-card-label">Slots &amp; Nights</p>
+            </div>
+          </div>
+
+          <!-- Sunday (Featured Highlight) -->
+          <div class="schedule-card highlight">
+            <div class="schedule-card-highlight-bar"></div>
+            <div class="schedule-card-icon highlight">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-volt"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="schedule-card-body">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="schedule-card-day">Sunday</span>
+                <span class="schedule-highlight-badge">FEATURED</span>
+              </div>
+              <p class="schedule-card-time">12:00 PM PST</p>
+              <p class="schedule-card-label">Game Day</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 5. BONUS / REWARD INFORMATION BANNER (Directly under schedule, clearly marked placeholder) -->
+        <!-- EDITABLE BONUS / REWARD PLACEHOLDER: Update text in config.js (SITE_CONFIG.bonusReward) or directly below -->
+        <div class="bonus-reward-banner reveal delay-4">
+          <div class="bonus-reward-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><polyline points="20 12 20 22 4 22 4 12"/><rect width="20" height="5" x="2" y="7"/><line x1="12" x2="12" y1="22" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+          </div>
+          <div class="bonus-reward-body">
+            <div class="bonus-badge-row">
+              <span class="bonus-reward-badge" data-config-text="bonusBadge">COMMUNITY BONUS</span>
+              <span class="bonus-reward-tag">WTF Games Partner</span>
+            </div>
+            <h4 class="bonus-reward-title" data-config-text="bonusTitle">Surprise Streams &amp; Community Rewards</h4>
+            <p class="bonus-reward-desc" data-config-text="bonusDesc">
+              Surprise streams for big games announced in Discord. Exclusive WTF Games player bonuses, VIP lossback matching, and giveaway entries active during live broadcasts.
+            </p>
+          </div>
+          <div class="bonus-reward-cta">
+            <a href="https://discord.gg/hKkG9NxuEg" data-config-link="discord" class="btn btn-gold btn-sm">
+              Claim on Discord
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION (About ItsTimbob)
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-split">
+        
+        <!-- Left: Authentic Narrative -->
+        <div class="reveal">
+          <span class="section-eyebrow">About</span>
+          <h2 class="section-title">About <span>ItsTimbob</span></h2>
+          <p style="font-size: 17px; line-height: 1.7; color: var(--text-ink-200); margin-top: 24px;">
+            ItsTimbob is a streamer focused on sports betting, live reactions, slots, giveaways, and community entertainment. What started as watching gamedays with friends turned into a standing live ritual &mdash; loud, opinionated, and impossible to sit still through.
+          </p>
+          <p style="font-size: 16px; line-height: 1.7; color: var(--text-ink-300); margin-top: 16px;">
+            No script, no filter. Just genuine reactions, sharp banter, and a chat that talks back. If you are here for the energy, pull up a chair.
+          </p>
+
+          <!-- Feature Pills / Tags (Original ItsTimbob Feature Badges) -->
+          <div class="about-feature-pills">
+            <span class="about-pill">
+              <svg class="about-pill-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+              </svg>
+              Live Reactions
+            </span>
+            <span class="about-pill">
+              <svg class="about-pill-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="6" x2="10" y1="11" y2="11"/>
+                <line x1="8" x2="8" y1="9" y2="13"/>
+                <line x1="15" x2="15.01" y1="12" y2="12"/>
+                <line x1="18" x2="18.01" y1="10" y2="10"/>
+                <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/>
+              </svg>
+              Slots &amp; Giveaways
+            </span>
+            <span class="about-pill">
+              <svg class="about-pill-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              Community First
+            </span>
+            <span class="about-pill">
+              <svg class="about-pill-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/>
+                <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/>
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/>
+                <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/>
+              </svg>
+              No Script, No Filter
+            </span>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <a href="#socials" class="btn btn-ghost btn-sm">
+              Connect Across Channels
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Creator Identity Card -->
+        <div class="creator-card reveal delay-2">
+          <div class="creator-card-header">
+            <div class="creator-avatar">IT</div>
+            <div class="creator-meta">
+              <h3>ItsTimbob</h3>
+              <p>Streamer &bull; Host &bull; Community</p>
+            </div>
+          </div>
+
+          <!-- Existing Primary Stats: 70% Commission Return & 10% WTF Lossback (Preserved) -->
+          <div class="creator-primary-stats">
+            <div class="creator-stat-card primary">
+              <div class="creator-stat-value brand">70%</div>
+              <div class="creator-stat-label">Commission Return</div>
+            </div>
+            <div class="creator-stat-card primary">
+              <div class="creator-stat-value gold">10%</div>
+              <div class="creator-stat-label">WTF Lossback</div>
+            </div>
+          </div>
+
+          <!-- 4 Missing Original Feature / Stat Cards (Compact & Refined) -->
+          <div class="creator-stats-grid">
+            <div class="creator-stat-card compact">
+              <div class="creator-stat-value">3&times;</div>
+              <div class="creator-stat-label">Streams Per Week</div>
+            </div>
+            <div class="creator-stat-card compact">
+              <div class="creator-stat-value">24/7</div>
+              <div class="creator-stat-label">Community Chat</div>
+            </div>
+            <div class="creator-stat-card compact">
+              <div class="creator-stat-value">100%</div>
+              <div class="creator-stat-label">Real Reactions</div>
+            </div>
+            <div class="creator-stat-card compact">
+              <div class="creator-stat-value">VIP</div>
+              <div class="creator-stat-label">Host Treatment</div>
+            </div>
+          </div>
+
+          <!-- Existing VIP Host Quote (Preserved) -->
+          <blockquote class="creator-vip-quote">
+            “DM me and let's talk like a real VIP host. If I feel you need a little extra support, we'll talk.”
+          </blockquote>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHAT I DO SECTION (The Content, Unfiltered - 4 Cards)
+       ========================================================================== -->
+  <section class="section" id="what-i-do">
+    <div class="container">
+      
+      <div class="section-header center reveal">
+        <span class="section-eyebrow">What I Do</span>
+        <h2 class="section-title">The content, <span>unfiltered</span></h2>
+        <p class="section-subtitle">
+          Four things keep the stream moving. No script, no filter &mdash; just real reactions and a community that shows up.
+        </p>
+      </div>
+
+      <div class="content-grid-4">
+        
+        <!-- Card 1: Sports Betting (Trophy Icon - Neon Green) -->
+        <div class="content-pillar-card accent-green reveal delay-1">
+          <div class="content-pillar-icon neon-green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+            </svg>
+          </div>
+          <h4>Sports Betting</h4>
+          <p>Gameday breakdowns, live reactions, and real-time takes on how the action is shaking out &mdash; all with chat weighing in.</p>
+        </div>
+
+        <!-- Card 2: Live Reactions (Live Broadcast / Radio Wave Icon - Neon Red) -->
+        <div class="content-pillar-card accent-red reveal delay-2">
+          <div class="content-pillar-icon neon-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path>
+              <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path>
+              <circle cx="12" cy="12" r="2"></circle>
+              <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path>
+              <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path>
+            </svg>
+          </div>
+          <h4>Live Reactions</h4>
+          <p>Real-time commentary and banter as things happen. The chat talks back, and the best clips get born in the moment.</p>
+        </div>
+
+        <!-- Card 3: Slots (Casino / Dice Icon - Neon Yellow) -->
+        <div class="content-pillar-card accent-yellow reveal delay-3">
+          <div class="content-pillar-icon neon-yellow">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+              <path d="M16 8h.01"></path>
+              <path d="M8 8h.01"></path>
+              <path d="M8 16h.01"></path>
+              <path d="M16 16h.01"></path>
+              <path d="M12 12h.01"></path>
+            </svg>
+          </div>
+          <h4>Slots</h4>
+          <p>Off-day slots streams with the community. Highs, lows, and the kind of energy only a live spin can bring.</p>
+        </div>
+
+        <!-- Card 4: Giveaways (Gift Icon - Neon Blue) -->
+        <div class="content-pillar-card accent-blue reveal delay-4">
+          <div class="content-pillar-icon neon-blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+              <path d="M12 8v13"></path>
+              <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+              <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+            </svg>
+          </div>
+          <h4>Giveaways</h4>
+          <p>Community giveaways and special events across channels. Real rewards, real winners, kept transparent.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VIP HOST SECTION (Gold Theme)
+       ========================================================================== -->
+  <section class="section" id="vip-host">
+    <div class="container">
+      
+      <div class="vip-card-box reveal">
+        
+        <div class="vip-top-grid">
+          <div>
+            <div class="vip-eyebrow-pill">
+              <svg class="vip-eyebrow-crown" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+              YOUR VIP HOST
+            </div>
+            <h2 class="section-title" style="font-size: clamp(28px, 4.5vw, 42px);">
+              Everyone using my affiliation link gets <span>VIP host treatment</span>
+            </h2>
+            <p style="font-size: 16px; color: #cbd5e1; margin-top: 16px; line-height: 1.6;">
+              Not a generic rewards ladder. Not a bot responding to a ticket. You get direct support, a host who answers, and an affiliate approach built around the people who actually show up.
+            </p>
+            <div class="vip-personal-promise-card">
+              <div class="vip-promise-badge-row">
+                <svg class="vip-promise-crown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path>
+                  <path d="M5 21h14"></path>
+                </svg>
+                <span class="vip-promise-badge-pill">PERSONAL HOST PROMISE</span>
+              </div>
+              <h4 class="vip-promise-headline">
+                &ldquo;ALL WAGERS ARE WELCOME <span class="sep-dash">&mdash;</span> <span class="volt-highlight">YOU&rsquo;RE A VIP TO ME.</span>&rdquo;
+              </h4>
+            </div>
+            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://discord.gg/hKkG9NxuEg" data-config-link="discord" class="btn btn-gold btn-sm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                DM to Get Started
+              </a>
+              <a href="javascript:void(0)" data-config-link="wtf" class="btn btn-ghost btn-sm">
+                Join Through ItsTimbob
+              </a>
+            </div>
+            <p class="vip-match-beat-note">
+              <svg class="vip-match-beat-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>Already have VIP perks or rewards elsewhere? DM ItsTimbob directly &mdash; <strong class="vip-match-beat-highlight">we&rsquo;ll match or beat them.</strong></span>
+            </p>
+          </div>
+
+          <!-- Quote Box -->
+          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid var(--gold-border); border-radius: 20px; padding: 28px;">
+            <p style="font-size: 17px; font-weight: 500; color: #fde68a; line-height: 1.6; font-style: italic;">
+              “DM me and let's talk like a real VIP host. If I feel you need a little extra support, we'll talk.”
+            </p>
+            <p style="margin-top: 12px; font-family: var(--font-display); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #fff;">
+              &mdash; ItsTimbob
+            </p>
+            <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(251, 191, 36, 0.2); font-size: 12px; color: var(--text-ink-400);">
+              VIP host treatment is about support and communication, not financial guarantees. Play responsibly. 18+
+            </div>
+          </div>
+        </div>
+
+        <!-- Dual VIP Treatment Highlight -->
+        <div class="vip-dual-highlight reveal delay-1">
+          <div class="vip-dual-highlight-main">
+            <div class="vip-dual-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <span class="vip-dual-eyebrow">DUAL VIP TREATMENT</span>
+              <p class="vip-dual-text">
+                Get personal VIP support from ItsTimbob alongside a WTF Games VIP Host, with 5–10% deposit bonuses and additional rewards based on activity. <span class="vip-dual-dm">DM to get started.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Pillars from Reference -->
+        <div class="vip-grid-4">
+          
+          <div class="vip-mini-card reveal delay-1">
+            <h5>
+              <span class="vip-mini-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </span>
+              A direct line to the host
+            </h5>
+            <p>Not a queue, not a ticket. Real answers, faster.</p>
+          </div>
+
+          <div class="vip-mini-card reveal delay-2">
+            <h5>
+              <span class="vip-mini-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m11 17 2 2a1 1 0 1 0 3-3"></path>
+                  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path>
+                  <path d="m21 3 1 11h-2"></path>
+                  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path>
+                  <path d="M3 4h8"></path>
+                </svg>
+              </span>
+              A more direct relationship
+            </h5>
+            <p>You talk to ItsTimbob directly. No layers of middlemen between you and the host.</p>
+          </div>
+
+          <div class="vip-mini-card reveal delay-3" style="border-color: rgba(194, 255, 0, 0.3);">
+            <h5 style="color: var(--brand-400);">
+              <span class="vip-mini-icon" style="background: rgba(194, 255, 0, 0.1); border-color: rgba(194, 255, 0, 0.3); color: var(--brand-400);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="M7 21h10"></path>
+                  <path d="M12 3v18"></path>
+                  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                </svg>
+              </span>
+              Fairer commission approach (70%)
+            </h5>
+            <p>“I do 70% commission and I'm a VIP host to the real wagers.” The majority of earnings goes directly back to the community.</p>
+          </div>
+
+          <div class="vip-mini-card reveal delay-4">
+            <h5>
+              <span class="vip-mini-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 21a8 8 0 0 0-16 0"></path>
+                  <circle cx="10" cy="8" r="5"></circle>
+                  <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path>
+                </svg>
+              </span>
+              No leaderboard pressure
+            </h5>
+            <p>No grinding for rank, no competing for scraps. You get treated well regardless of volume.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       "YOUR PLAYERS" WTF GAMES BENEFITS SECTION
+       ========================================================================== -->
+  <section class="section" id="your-players">
+    <div class="container">
+      
+      <div class="section-header center reveal">
+        <span class="section-eyebrow">WTF Games Partnership</span>
+        <h2 class="section-title">YOUR <span>PLAYERS</span></h2>
+        <p class="section-subtitle">
+          Everything negotiated with WTF Games for players who register using ItsTimbob's partner link.
+        </p>
+      </div>
+
+      <div class="your-players-grid">
+        
+        <!-- 1. WTF takes care of player lossback & rewards -->
+        <div class="player-card reveal delay-1">
+          <div class="player-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path><circle cx="12" cy="6.5" r="2.2"></circle><path d="M12 15v4"></path><path d="M8 21h8"></path></svg>
+          </div>
+          <h4>Player Lossback &amp; Rewards</h4>
+          <p>WTF takes care of player lossback &amp; rewards directly on platform, ensuring smooth automated distribution with zero wait times.</p>
+        </div>
+
+        <!-- 2. 10% lossback uncapped (Featured) -->
+        <div class="player-card highlight reveal delay-2">
+          <div class="player-icon" style="background: rgba(194, 255, 0, 0.2);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m14.5 9-5 6"></path><circle cx="10" cy="9.5" r="1.2"></circle><circle cx="14" cy="14.5" r="1.2"></circle></svg>
+          </div>
+          <h4 style="color: var(--brand-400);">10% Lossback Uncapped</h4>
+          <p>10% lossback uncapped on WTF Games. No arbitrary restrictions, no fine-print traps &mdash; transparent protection on your play.</p>
+        </div>
+
+        <!-- 3. Automatic VIP matching -->
+        <div class="player-card reveal delay-3">
+          <div class="player-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="7" r="2.5"></circle><path d="M2 20v-1.5a4 4 0 0 1 6.5-3.1"></path><circle cx="17.5" cy="7" r="2.5"></circle><path d="M22 20v-1.5a4 4 0 0 0-6.5-3.1"></path><path d="M10 12h4"></path><path d="m12.5 10 2 2-2 2"></path><path d="m11.5 14-2-2 2-2"></path></svg>
+          </div>
+          <h4>Automatic VIP Matching</h4>
+          <p>Automatic VIP matching for players joining through your link. Keep your status and privileges intact when you join.</p>
+        </div>
+
+        <!-- 4. High-value players get a dedicated VIP host & individual treatment -->
+        <div class="player-card reveal delay-1">
+          <div class="player-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 5 8.5 8h7L17 5 14.5 6.5 12 3.5 9.5 6.5Z"></path><circle cx="12" cy="12.5" r="3"></circle><path d="M5 21a7 7 0 0 1 14 0"></path><path d="m10 16.5 2 2.5 2-2.5"></path><path d="M12 19v2"></path></svg>
+          </div>
+          <h4>Dedicated VIP Host</h4>
+          <p>High-value players get a dedicated VIP host &amp; individual treatment, custom handling, and direct support for real wagers.</p>
+        </div>
+
+        <!-- 5. Additional cash bonuses & rewards based on activity -->
+        <div class="player-card reveal delay-2">
+          <div class="player-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="7" rx="6" ry="2.5"></ellipse><path d="M3 7v10c0 1.38 2.69 2.5 6 2.5s6-1.12 6-2.5V7"></path><path d="M3 12c0 1.38 2.69 2.5 6 2.5s6-1.12 6-2.5"></path><path d="M19 4v6"></path><path d="M16 7h6"></path></svg>
+          </div>
+          <h4>Additional Cash Bonuses</h4>
+          <p>Additional cash bonuses &amp; rewards based on activity. As you play, you unlock extra cash drops and tailored benefits.</p>
+        </div>
+
+        <!-- 6. Stacked Value -->
+        <div class="player-card reveal delay-3" style="border-color: var(--gold-border);">
+          <div class="player-icon" style="background: var(--gold-dim); border-color: var(--gold-border); color: var(--gold-400);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="5.5"></circle><path d="M12 5.5c0 1.5-.9 3-2.4 3 1.5 0 2.4 1.5 2.4 3 0-1.5.9-3 2.4-3-1.5 0-2.4-1.5-2.4-3Z"></path><path d="m8.5 13.5-2 7.5 5.5-2.5 5.5 2.5-2-7.5"></path></svg>
+          </div>
+          <h4 style="color: var(--gold-400);">Creator + Platform Rewards</h4>
+          <p>Stack WTF Games' 10% lossback with ItsTimbob's personal 70% commission community giveaways and direct host care.</p>
+        </div>
+
+      </div>
+
+      <!-- 5–10% VIP Deposit Bonus Highlight -->
+      <div class="vip-deposit-highlight-card reveal delay-1">
+        <div class="vip-deposit-highlight-left">
+          <div class="vip-deposit-highlight-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path>
+              <path d="M5 21h14"></path>
+            </svg>
+          </div>
+          <div class="vip-deposit-highlight-text">
+            <div class="vip-deposit-badge-row">
+              <span class="vip-deposit-tag">VIP PERK</span>
+              <span class="vip-deposit-dot">&bull;</span>
+              <span class="vip-deposit-sub">EXCLUSIVE PARTNERSHIP</span>
+            </div>
+            <h4 class="vip-deposit-title">5–10% VIP Deposit Bonus</h4>
+            <p class="vip-deposit-desc">Real VIPs can receive a 5–10% deposit bonus through ItsTimbob and WTF Games, plus additional rewards based on activity.</p>
+          </div>
+        </div>
+        <div class="vip-deposit-highlight-cta">
+          <a href="https://discord.gg/hKkG9NxuEg" data-config-link="discord" class="btn btn-ghost btn-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            DM to Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Partner Call to Action Banner with Official WTF Games Lockup -->
+      <div class="partner-banner reveal delay-2">
+        <div class="partner-banner-brand">
+          <div class="partner-logo-container">
+            <img src="assets/wtfgames_logo.jpg" alt="WTF Games Official Logo" class="partner-logo-img" loading="lazy">
+          </div>
+          <div class="partner-banner-text">
+            <span class="partner-official-label">OFFICIAL SIGNED PARTNER &bull; WTF GAMES</span>
+            <h3>Play With ItsTimbob On WTF Games</h3>
+            <p>Ready to get started with 10% uncapped lossback and automatic VIP matching?</p>
+            <div class="partner-referral-status">
+              <span class="partner-status-pulse"></span>
+              <span>Referral link coming soon &mdash; use code <strong class="volt">ItsTimbob</strong> for now.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WTF Games Code Box with Copy Action -->
+        <div class="wtf-code-card" id="wtfCodeCard">
+          <div class="wtf-code-header">
+            <span class="wtf-code-label">WTF GAMES CODE</span>
+            <span class="wtf-code-status-pill">LINK COMING SOON</span>
+          </div>
+          <div class="wtf-code-display-row">
+            <span class="wtf-code-value" id="wtfCodeValue" title="Click to copy code">ItsTimbob</span>
+            <button type="button" class="btn btn-volt btn-sm wtf-copy-btn" id="copyWtfCodeBtn" aria-label="Copy WTF Games code ItsTimbob">
+              <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+              </svg>
+              <span class="copy-btn-text">COPY CODE</span>
+            </button>
+          </div>
+          <div class="wtf-code-sub">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Referral link coming soon &mdash; use code <strong>ItsTimbob</strong> for now.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GROWTH & UPSIDE SECTION
+       ========================================================================== -->
+  <section class="section" id="growth">
+    <div class="container">
+      
+      <div class="growth-quote-box reveal">
+        <span class="section-eyebrow">Growth &amp; Upside</span>
+        <h2 class="growth-motto-title">
+          “not the ceiling as I grow <span>we all grow</span>.”
+        </h2>
+        <p class="growth-motto-text">
+          That is the core commitment. When the stream scales and community wagers rise, earnings don't sit in a vault &mdash; they immediately fuel bigger community drops, larger giveaway pools, and higher tier rewards for everyone involved.
+        </p>
+
+        <div style="display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
+          <a href="javascript:void(0)" data-config-link="wtf" class="btn btn-volt btn-sm">
+            Play With ItsTimbob
+          </a>
+          <a href="#socials" class="btn btn-ghost btn-sm">
+            Join The Squad
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       COMMISSION SECTION (Giving back / VIP Host & Community Support)
+       ========================================================================== -->
+  <section class="section" id="commission">
+    <div class="container">
+      
+      <div class="section-header center reveal">
+        <span class="section-eyebrow">Commission</span>
+        <h2 class="section-title">Giving <span>back</span></h2>
+      </div>
+
+      <!-- VIP Host & Community Support Recreated Box -->
+      <div class="commission-box reveal delay-1">
+        
+        <!-- 1. Section Heading with HandHeart Icon -->
+        <div class="commission-box-header">
+          <div class="commission-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"></path>
+              <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"></path>
+              <path d="m2 15 6 6"></path>
+              <path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z"></path>
+            </svg>
+          </div>
+          <h3 class="commission-box-title">VIP Host &amp; Community Support</h3>
+        </div>
+
+        <!-- 2. Main Description & 3. Community / Streaming Statement -->
+        <div class="commission-box-body">
+          <p class="commission-main-desc">
+            I'm a VIP Host, but I also do commission work to give back to the community. 70% of my commission earnings goes back into the community, 10% is used for giveaways, and the remaining 20% goes toward profit.
+          </p>
+          <p class="commission-statement">
+            <svg class="commission-statement-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5.8 11.3 2 22l10.7-3.79"></path>
+              <path d="M4 3h.01"></path>
+              <path d="M22 8h.01"></path>
+              <path d="M15 2h.01"></path>
+              <path d="M22 20h.01"></path>
+              <path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"></path>
+              <path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"></path>
+              <path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"></path>
+              <path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"></path>
+            </svg>
+            <span>I also stream, host community events, run giveaways, and help keep the community active and growing. There's always something going on!</span>
+          </p>
+        </div>
+
+        <!-- 4. Three Percentage Cards (Compact & Responsive) -->
+        <div class="commission-cards-grid">
+          
+          <!-- Card 1: 70% Back to Community -->
+          <div class="commission-card accent-brand">
+            <div class="commission-card-top">
+              <div class="commission-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <span class="commission-pct brand">70%</span>
+            </div>
+            <div class="commission-bar-track">
+              <div class="commission-bar-fill brand" style="width: 70%;"></div>
+            </div>
+            <h4 class="commission-card-title">Back to Community</h4>
+            <p class="commission-card-desc">The majority of commission earnings goes directly back into the community.</p>
+          </div>
+
+          <!-- Card 2: 10% Giveaways -->
+          <div class="commission-card accent-gold">
+            <div class="commission-card-top">
+              <div class="commission-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                  <path d="M12 8v13"></path>
+                  <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+                  <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+                </svg>
+              </div>
+              <span class="commission-pct gold">10%</span>
+            </div>
+            <div class="commission-bar-track">
+              <div class="commission-bar-fill gold" style="width: 10%;"></div>
+            </div>
+            <h4 class="commission-card-title">Giveaways</h4>
+            <p class="commission-card-desc">A dedicated slice funds regular community giveaways and special events.</p>
+          </div>
+
+          <!-- Card 3: 20% Profit -->
+          <div class="commission-card accent-ink">
+            <div class="commission-card-top">
+              <div class="commission-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+                </svg>
+              </div>
+              <span class="commission-pct ink">20%</span>
+            </div>
+            <div class="commission-bar-track">
+              <div class="commission-bar-fill ink" style="width: 20%;"></div>
+            </div>
+            <h4 class="commission-card-title">Profit</h4>
+            <p class="commission-card-desc">The remaining portion goes toward profit to keep things sustainable.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SOCIALS SECTION (Find me everywhere - 6 Channels)
+       ========================================================================== -->
+  <section class="section" id="socials">
+    <div class="container">
+      
+      <div class="section-header center reveal">
+        <span class="section-eyebrow">Socials</span>
+        <h2 class="section-title">Find me <span>everywhere</span></h2>
+        <p class="section-subtitle">
+          Live streams, clips, and the community hub &mdash; all in one place. Pull up.
+        </p>
+      </div>
+
+      <div class="socials-grid-5">
+        
+        <!-- Twitch -->
+        <a href="https://twitch.tv/itstimbob" target="_blank" rel="noopener noreferrer" data-config-link="twitch" class="social-card social-card--twitch reveal delay-1">
+          <div class="social-card-ambient" aria-hidden="true"></div>
+          <span class="social-card-arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </span>
+          <div class="social-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/></svg>
+          </div>
+          <div class="social-card-info">
+            <h5 class="social-card-title">Twitch</h5>
+            <p class="social-card-handle">twitch.tv/itstimbob</p>
+          </div>
+        </a>
+
+        <!-- X (Twitter) -->
+        <a href="https://x.com/ItsTimbob" target="_blank" rel="noopener noreferrer" data-config-link="x" class="social-card social-card--x reveal delay-2">
+          <div class="social-card-ambient" aria-hidden="true"></div>
+          <span class="social-card-arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </span>
+          <div class="social-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <div class="social-card-info">
+            <h5 class="social-card-title">X / Twitter</h5>
+            <p class="social-card-handle">@ItsTimbob</p>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/ItsTimbob" target="_blank" rel="noopener noreferrer" data-config-link="instagram" class="social-card social-card--instagram reveal delay-3">
+          <div class="social-card-ambient" aria-hidden="true"></div>
+          <span class="social-card-arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </span>
+          <div class="social-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+          </div>
+          <div class="social-card-info">
+            <h5 class="social-card-title">Instagram</h5>
+            <p class="social-card-handle">@ItsTimbob</p>
+          </div>
+        </a>
+
+        <!-- Discord -->
+        <a href="https://discord.gg/hKkG9NxuEg" target="_blank" rel="noopener noreferrer" data-config-link="discord" class="social-card social-card--discord reveal delay-1">
+          <div class="social-card-ambient" aria-hidden="true"></div>
+          <span class="social-card-arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </span>
+          <div class="social-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          </div>
+          <div class="social-card-info">
+            <h5 class="social-card-title">Discord</h5>
+            <p class="social-card-handle">Join the community</p>
+          </div>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/+GjSgJUK0AUYxNmZh" target="_blank" rel="noopener noreferrer" data-config-link="telegram" class="social-card social-card--telegram reveal delay-3">
+          <div class="social-card-ambient" aria-hidden="true"></div>
+          <span class="social-card-arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </span>
+          <div class="social-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+          </div>
+          <div class="social-card-info">
+            <h5 class="social-card-title">Telegram</h5>
+            <p class="social-card-handle">Join the channel</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ SECTION
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      
+      <div class="section-header center reveal">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-title">Common <span>questions</span></h2>
+        <p class="section-subtitle">
+          Everything you need to know about ItsTimbob, VIP host perks, and WTF Games.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        
+        <div class="faq-card reveal delay-1">
+          <button class="faq-btn" aria-expanded="false">
+            <span>Who is ItsTimbob?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              ItsTimbob is a live content creator, streamer, and VIP host focused on sports betting banter, matchday reactions, and high-energy slots entertainment. He is also an officially signed affiliate and partner of WTF Games.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card reveal delay-2">
+          <button class="faq-btn" aria-expanded="false">
+            <span>How do I join WTF Games through ItsTimbob?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Click any of the "Join WTF Games" buttons on this website. Using his official partner link automatically qualifies your account for player benefits including 10% uncapped lossback, automatic VIP tier matching, and direct host support.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card reveal delay-3">
+          <button class="faq-btn" aria-expanded="false">
+            <span>What is the 70% commission model?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              ItsTimbob operates with a fairer commission approach: 70% of affiliate earnings is directly cycled back into the community via regular giveaways, stream drops, and direct VIP support for active wagers.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card reveal delay-1">
+          <button class="faq-btn" aria-expanded="false">
+            <span>What benefits do players get on WTF Games?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              WTF Games provides 10% uncapped lossback, automatic VIP matching, and additional rewards based on activity. Real VIPs can also receive a 5–10% deposit bonus through both ItsTimbob's personal VIP support and the WTF Games VIP Host.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card reveal delay-2">
+          <button class="faq-btn" aria-expanded="false">
+            <span>How do I contact ItsTimbob for VIP Host support?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              DM ItsTimbob directly on Discord, message on Telegram, or email <span data-config-text="email">Hey@Timbob.space</span> to get started. You get personal VIP support from ItsTimbob alongside a WTF Games VIP Host, with 5–10% deposit bonuses and additional rewards based on activity. If you already have VIP perks or rewards elsewhere, DM ItsTimbob directly and we will match or beat them.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (Recreated from Reference)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-top-line"></div>
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Left Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="logo" aria-label="ItsTimbob home">
+            <span class="logo-badge">IT</span>
+            <span class="logo-text">ITS<span class="volt">TIMBOB</span></span>
+          </a>
+          <p>
+            Sports, reactions, slots &amp; community entertainment &mdash; live. A streamer brand built on real reactions, sharp banter, and a community that keeps showing up.
+          </p>
+          <div class="footer-socials" style="display: flex; gap: 12px; margin-top: 18px;">
+            <a href="https://twitch.tv/itstimbob" data-config-link="twitch" class="footer-social-icon" aria-label="Twitch">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.149 0l-1.612 4.119v16.8h5.626v3.081h3.216l3.076-3.081h4.685l6.86-6.861v-14.058h-21.845zm19.704 13.023l-3.854 3.857h-5.143l-3.076 3.081v-3.081h-4.685v-14.739h16.758v10.882zm-4.143-6.574h-2.143v6.172h2.143v-6.172zm-6.143 0h-2.143v6.172h2.143v-6.172z"/></svg>
+            </a>
+            <a href="https://discord.gg/hKkG9NxuEg" data-config-link="discord" class="footer-social-icon" aria-label="Discord">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </a>
+            <a href="https://t.me/+GjSgJUK0AUYxNmZh" data-config-link="telegram" class="footer-social-icon" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.537-.194 1.006.128.832.943z"/></svg>
+            </a>
+            <a href="https://x.com/ItsTimbob" data-config-link="x" class="footer-social-icon" aria-label="X">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com/ItsTimbob" data-config-link="instagram" class="footer-social-icon" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h5 class="footer-title">Navigation</h5>
+          <ul class="footer-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#streams" class="footer-link">Streams</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#what-i-do" class="footer-link">Content</a></li>
+            <li><a href="#vip-host" class="footer-link">VIP Host (70%)</a></li>
+            <li><a href="#your-players" class="footer-link">Your Players</a></li>
+            <li><a href="#growth" class="footer-link">Growth &amp; Upside</a></li>
+            <li><a href="#socials" class="footer-link">Socials</a></li>
+          </ul>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h5 class="footer-title">Partnership</h5>
+          <ul class="footer-list">
+            <li><a href="javascript:void(0)" data-config-link="wtf" class="footer-link" style="color: var(--brand-400); font-weight: 600;">Join WTF Games &rarr;</a></li>
+            <li><a href="https://t.me/+GjSgJUK0AUYxNmZh" data-config-link="telegram" class="footer-link">Telegram Channel</a></li>
+            <li><a href="https://discord.gg/hKkG9NxuEg" data-config-link="discord" class="footer-link">Discord Community</a></li>
+            <li><a href="mailto:Hey@Timbob.space" data-config-link="email" class="footer-link">Hey@Timbob.space</a></li>
+          </ul>
+          <!-- Subtle Official Partner Footer Lockup -->
+          <div class="footer-partner-lockup">
+            <span class="footer-partner-label">OFFICIAL PARTNER</span>
+            <div class="footer-partner-badge">
+              <img src="assets/wtfgames_logo.jpg" alt="WTF Games" class="footer-partner-logo" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Responsible Gaming Disclaimer from Reference -->
+      <div class="footer-legal-box">
+        <svg class="footer-legal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+          <line x1="12" y1="9" x2="12" y2="13"></line>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+        <p class="footer-legal-text">
+          <span class="footer-legal-title">Play responsibly.</span> Content on this site is for entertainment purposes only. ItsTimbob does not guarantee winnings, profits, bonuses, or any financial outcome. VIP host services focus on support and communication. Gambling involves risk &mdash; only play with what you can afford to lose. Strictly 18+. If you or someone you know needs support, reach out to BeGambleAware.org.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="currentYear">2026</span> ItsTimbob. All rights reserved.</div>
+        <div>Built for the community. Streamed live.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-bar" id="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toastMsg">Email copied to clipboard!</span>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
