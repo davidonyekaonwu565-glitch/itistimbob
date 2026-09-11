@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSiteConfig();
   startHeroStatusRotator();
   initHeaderScroll();
-  initTwitchLiveMonitor();
+  initKickLiveMonitor();
   initScrollReveals();
   initActiveNavHighlight();
   initMobileNav();
@@ -37,7 +37,7 @@ function initSiteConfig() {
 
   // Hydrate Social & Platform Links
   const linkMappings = {
-    'twitch': cfg.twitchUrl,
+    'kick': cfg.kickUrl || 'https://kick.com/itstimbob',
     'x': cfg.xUrl,
     'instagram': cfg.instagramUrl,
     'discord': cfg.discordUrl,
@@ -122,8 +122,8 @@ function initSiteConfig() {
     }, 460);
   }
 
-  // WTF Games Referral Link Handling with Fast "WTF" Letter-Loading Interaction
-  // Target URL defaults to Discord destination until official WTF Games referral link is set in SITE_CONFIG
+  // WTF Games CTA Link Handling with Fast "WTF" Letter-Loading Interaction
+  // Directly opens https://www.wtfgames.com in a new tab
   const wtfElements = document.querySelectorAll('[data-config-link="wtf"]');
   wtfElements.forEach(el => {
     el.removeAttribute('href');
@@ -131,46 +131,10 @@ function initSiteConfig() {
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
     
-    const clickHandler = async (e) => {
+    const clickHandler = (e) => {
       e.preventDefault();
-      const referralUrl = window.SITE_CONFIG?.wtfReferralUrl?.trim();
-
-      if (referralUrl && referralUrl !== '') {
-        // Official referral link has arrived: trigger fast WTF sequence and navigate
-        triggerWtfSequence(el, referralUrl);
-      } else {
-        // Official link pending: copy code, scroll to WTF section, and highlight code card
-        const code = window.SITE_CONFIG?.wtfReferralCode || 'ItsTimbob';
-        try {
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            await navigator.clipboard.writeText(code);
-          } else {
-            const tempInput = document.createElement('input');
-            tempInput.value = code;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-          }
-        } catch (err) {
-          console.error('Clipboard copy error:', err);
-        }
-
-        const targetSection = document.getElementById('your-players');
-        if (targetSection) {
-          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-
-        const codeCard = document.getElementById('wtfCodeCard');
-        if (codeCard) {
-          codeCard.classList.add('wtf-card-highlight');
-          setTimeout(() => {
-            codeCard.classList.remove('wtf-card-highlight');
-          }, 1800);
-        }
-
-        showToast(`Referral link coming soon — Code "${code}" copied!`);
-      }
+      const targetUrl = window.SITE_CONFIG?.wtfReferralUrl?.trim() || 'https://www.wtfgames.com';
+      triggerWtfSequence(el, targetUrl);
     };
 
     el.addEventListener('click', clickHandler);
@@ -251,7 +215,7 @@ function updateLiveStatus(isLive, streamData = {}) {
 
   if (centerPrompt) {
     centerPrompt.textContent = isLive
-      ? (cfg.stream?.liveText || 'Click to watch live on Twitch')
+      ? (cfg.stream?.liveText || 'Click to watch live on Kick')
       : (cfg.stream?.statusText || 'Stream is offline \u2014 check the schedule below');
   }
 
@@ -326,11 +290,11 @@ function stopHeroStatusRotator() {
 }
 
 /**
- * 2. AUTOMATED TWITCH LIVE STATUS MONITOR
+ * 2. AUTOMATED KICK LIVE STATUS MONITOR
  * Automatically polls and updates the single status ('Online' or 'Offline')
- * based on live Twitch channel status.
+ * based on live Kick channel status.
  */
-function initTwitchLiveMonitor() {
+function initKickLiveMonitor() {
   const cfg = window.SITE_CONFIG || {};
   const channel = (cfg.stream && cfg.stream.channel) || 'itstimbob';
 
@@ -340,7 +304,7 @@ function initTwitchLiveMonitor() {
     const forcedLive = urlParams.get('live') === 'true' || urlParams.get('live') === '1';
     updateLiveStatus(forcedLive, {
       viewers: forcedLive ? 1280 : 0,
-      title: forcedLive ? 'Live on Twitch \u2014 Weekend Slate & Reactions' : undefined
+      title: forcedLive ? 'Live on Kick \u2014 Weekend Slate & Reactions' : undefined
     });
     return;
   }
@@ -348,43 +312,6 @@ function initTwitchLiveMonitor() {
     const forcedLive = urlParams.get('status') === 'online' || urlParams.get('status') === 'live';
     updateLiveStatus(forcedLive);
     return;
-  }
-
-  // If autoCheckTwitch is explicitly enabled in SITE_CONFIG, poll Twitch API
-  if (cfg.stream && cfg.stream.autoCheckTwitch) {
-    async function checkTwitch() {
-      try {
-        const res = await fetch(`https://decapi.me/twitch/uptime/${encodeURIComponent(channel)}`, {
-          cache: 'no-store'
-        });
-        if (res.ok) {
-          const text = (await res.text()).trim();
-          const isOffline = text.toLowerCase().includes('offline') || 
-                            text.toLowerCase().includes('does not exist') ||
-                            text.toLowerCase().includes('not found') ||
-                            text === '';
-          const isLive = !isOffline;
-
-          let extraData = {};
-          if (isLive) {
-            try {
-              const vRes = await fetch(`https://decapi.me/twitch/viewercount/${encodeURIComponent(channel)}`, { cache: 'no-store' });
-              if (vRes.ok) {
-                const vText = (await vRes.text()).trim();
-                const num = parseInt(vText, 10);
-                if (!isNaN(num)) extraData.viewers = num;
-              }
-            } catch (e) {}
-          }
-
-          updateLiveStatus(isLive, extraData);
-          return;
-        }
-      } catch (err) {}
-    }
-
-    checkTwitch();
-    setInterval(checkTwitch, 60000);
   }
 }
 
@@ -573,7 +500,7 @@ function initEmailCopy() {
 
   triggers.forEach(el => {
     el.addEventListener('click', async () => {
-      const email = window.SITE_CONFIG ? window.SITE_CONFIG.contactEmail : 'Hey@Timbob.space';
+      const email = window.SITE_CONFIG ? window.SITE_CONFIG.contactEmail : 'hey@timbob.space';
       try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
           await navigator.clipboard.writeText(email);

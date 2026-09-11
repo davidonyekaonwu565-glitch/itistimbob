@@ -26,17 +26,17 @@ Open `js/config.js` and edit:
 ```javascript
 const SITE_CONFIG = {
   // 1. WTF Games Referral Link
-  wtfReferralUrl: "https://wtfgames.com/?ref=ItsTimbob", // <-- PASTE REAL REFERRAL LINK HERE
+  wtfReferralUrl: "https://www.wtfgames.com", // <-- PASTE REAL REFERRAL LINK HERE
 
   // 2. Social & Community Links
-  twitchUrl: "https://twitch.tv/itstimbob",
+  kickUrl: "https://kick.com/itstimbob",
   xUrl: "https://x.com/ItsTimbob",
   instagramUrl: "https://instagram.com/ItsTimbob",
   discordUrl: "https://discord.gg/hKkG9NxuEg", // <-- Official Discord Invite Link
   telegramUrl: "https://t.me/+GjSgJUK0AUYxNmZh", // <-- PASTE REAL TELEGRAM CHANNEL HERE
   
   // 3. Contact Email
-  contactEmail: "Hey@Timbob.space",
+  contactEmail: "hey@timbob.space",
 
   // 4. Live Stream Status
   stream: {
@@ -85,7 +85,7 @@ itstimbob/
 - **70% Commission & VIP Host Section**: Prominent spotlight on the client's 70% commission model and direct 1-on-1 VIP host communication.
 - **"YOUR PLAYERS" WTF Games Perks**: Highlights 10% uncapped lossback, automatic VIP tier matching, high-value host care, and activity cash bonuses.
 - **"GROWTH & UPSIDE" Section**: Spotlights the client's exact phrase: *"not the ceiling as I grow we all grow."*
-- **Community Hub**: Features Discord, Telegram, Twitch, X (Twitter), and Instagram with direct action buttons.
+- **Community Hub**: Features Discord, Telegram, Kick, X (Twitter), and Instagram with direct action buttons.
 - **Interactive FAQ**: Accordion answering visitor and player questions cleanly without invented facts.
 - **1-Click Email Copy**: Smooth clipboard copy with toast feedback.
 - **Responsible Gaming**: Built-in 18+ and BeGambleAware disclosures.

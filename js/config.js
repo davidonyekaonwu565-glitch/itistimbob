@@ -15,28 +15,28 @@ const SITE_CONFIG = {
   // WTF Games Referral Code & Link
   // Temporary referral code until client provides the official referral link over the weekend:
   wtfReferralCode: "ItsTimbob",
-  // [Insert client's official WTF Games referral link here once delivered]
-  wtfReferralUrl: "", 
+  // All WTF Games buttons link directly to WTF Games:
+  wtfReferralUrl: "https://www.wtfgames.com", 
 
   // Social & Community Channels
-  twitchUrl: "https://twitch.tv/itstimbob",
+  kickUrl: "https://kick.com/itstimbob",
   xUrl: "https://x.com/ItsTimbob",
   instagramUrl: "https://instagram.com/ItsTimbob",
   discordUrl: "https://discord.gg/hKkG9NxuEg",
   telegramUrl: "https://t.me/+GjSgJUK0AUYxNmZh",
   
   // Contact details
-  contactEmail: "Hey@Timbob.space",
+  contactEmail: "hey@timbob.space",
 
   // Stream status & schedule settings
   stream: {
     channel: "itstimbob",
     isLive: false,
-    autoCheckTwitch: false, // Set to true to automatically poll Twitch API
+    autoCheckKick: false,
     title: "Gameday Reactions — Sunday Slate Live",
     category: "Sports & Reactions • Slots & Giveaways",
     statusText: "Stream is offline — check the schedule below",
-    liveText: "LIVE NOW ON TWITCH — Come join the action!",
+    liveText: "LIVE NOW ON KICK — Come join the action!",
     viewers: 1420
   },
 

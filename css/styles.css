@@ -40,7 +40,7 @@
   --danger-dim: rgba(255, 56, 56, 0.15);
 
   /* Social Brands */
-  --twitch-purple: #9146ff;
+  --kick-green: #53fc18;
   --discord-blue: #5865f2;
   --telegram-blue: #229ed9;
 
@@ -1219,7 +1219,7 @@ img, svg {
   pointer-events: auto;
 }
 
-/* 1. TWITCH LIVE / OFFLINE STATUS BADGE */
+/* 1. KICK LIVE / OFFLINE STATUS BADGE */
 .stream-live-pill {
   position: relative;
   display: inline-flex;
@@ -3383,21 +3383,21 @@ img, svg {
    Per-Platform Recognizable Neon Accents & Colored Glows
    -------------------------------------------------------------------------- */
 
-/* 1. Twitch -> purple neon */
-.social-card--twitch .social-card-ambient {
-  background: linear-gradient(180deg, #9146ff, transparent);
+/* 1. Kick -> neon green */
+.social-card--kick .social-card-ambient {
+  background: linear-gradient(180deg, #53fc18, transparent);
 }
-.social-card--twitch .social-card-icon {
-  background: linear-gradient(135deg, #9146ff 0%, #a970ff 100%);
-  color: #ffffff;
-  box-shadow: 0 8px 24px rgba(145, 70, 255, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+.social-card--kick .social-card-icon {
+  background: linear-gradient(135deg, #53fc18 0%, #2ecc71 100%);
+  color: #0b0f19;
+  box-shadow: 0 8px 24px rgba(83, 252, 24, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35);
 }
-.social-card--twitch:hover {
-  border-color: rgba(145, 70, 255, 0.4);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 24px rgba(145, 70, 255, 0.2);
+.social-card--kick:hover {
+  border-color: rgba(83, 252, 24, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 24px rgba(83, 252, 24, 0.2);
 }
-.social-card--twitch:hover .social-card-icon {
-  box-shadow: 0 12px 32px rgba(145, 70, 255, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+.social-card--kick:hover .social-card-icon {
+  box-shadow: 0 12px 32px rgba(83, 252, 24, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 /* 2. X / Twitter -> soft white/silver */
@@ -3466,6 +3466,23 @@ img, svg {
 }
 .social-card--telegram:hover .social-card-icon {
   box-shadow: 0 12px 32px rgba(42, 171, 238, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* 7. Email / Gmail -> gold neon */
+.social-card--email .social-card-ambient {
+  background: linear-gradient(180deg, var(--gold-400), transparent);
+}
+.social-card--email .social-card-icon {
+  background: linear-gradient(135deg, var(--gold-400) 0%, var(--gold-500) 100%);
+  color: #040405;
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+}
+.social-card--email:hover {
+  border-color: rgba(251, 191, 36, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 24px rgba(251, 191, 36, 0.2);
+}
+.social-card--email:hover .social-card-icon {
+  box-shadow: 0 12px 32px rgba(251, 191, 36, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 /* ==========================================================================
