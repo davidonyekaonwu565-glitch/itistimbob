@@ -39,7 +39,6 @@ function initSiteConfig() {
   const linkMappings = {
     'kick': cfg.kickUrl || 'https://kick.com/itstimbob',
     'x': cfg.xUrl,
-    'instagram': cfg.instagramUrl,
     'discord': cfg.discordUrl,
     'telegram': cfg.telegramUrl,
     'email': `mailto:${cfg.contactEmail}`

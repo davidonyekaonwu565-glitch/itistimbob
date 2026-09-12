@@ -3417,24 +3417,7 @@ img, svg {
   box-shadow: 0 12px 32px rgba(255, 255, 255, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-/* 3. Instagram -> pink/orange neon gradient */
-.social-card--instagram .social-card-ambient {
-  background: linear-gradient(180deg, #e1306c, transparent);
-}
-.social-card--instagram .social-card-icon {
-  background: linear-gradient(135deg, #fd5d5d 0%, #c13584 50%, #f5af19 100%);
-  color: #ffffff;
-  box-shadow: 0 8px 24px rgba(225, 48, 108, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35);
-}
-.social-card--instagram:hover {
-  border-color: rgba(225, 48, 108, 0.4);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 24px rgba(225, 48, 108, 0.2);
-}
-.social-card--instagram:hover .social-card-icon {
-  box-shadow: 0 12px 32px rgba(225, 48, 108, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.5);
-}
-
-/* 4. Discord -> blue/purple neon */
+/* 3. Discord -> blue/purple neon */
 .social-card--discord .social-card-ambient {
   background: linear-gradient(180deg, #5865f2, transparent);
 }

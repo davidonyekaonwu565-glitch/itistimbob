@@ -21,7 +21,6 @@ const SITE_CONFIG = {
   // Social & Community Channels
   kickUrl: "https://kick.com/itstimbob",
   xUrl: "https://x.com/ItsTimbob",
-  instagramUrl: "https://instagram.com/ItsTimbob",
   discordUrl: "https://discord.gg/hKkG9NxuEg",
   telegramUrl: "https://t.me/+GjSgJUK0AUYxNmZh",
   
