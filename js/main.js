@@ -38,6 +38,7 @@ function initSiteConfig() {
   // Hydrate Social & Platform Links
   const linkMappings = {
     'kick': cfg.kickUrl || 'https://kick.com/itstimbob',
+    'youtube': cfg.youtubeUrl || 'https://youtube.com/@itstimbob',
     'x': cfg.xUrl,
     'discord': cfg.discordUrl,
     'telegram': cfg.telegramUrl,
