@@ -32,6 +32,7 @@ const SITE_CONFIG = {
   kickUrl: "https://kick.com/itstimbob",
   youtubeUrl: "https://youtube.com/@itstimbob",
   xUrl: "https://x.com/ItsTimbob",
+  instagramUrl: "https://www.instagram.com/itstimbobofficial",
   discordUrl: "https://discord.gg/hKkG9NxuEg", // <-- Official Discord Invite Link
   telegramUrl: "https://t.me/+GjSgJUK0AUYxNmZh", // <-- PASTE REAL TELEGRAM CHANNEL HERE
   
@@ -85,7 +86,7 @@ itstimbob/
 - **70% Commission & VIP Host Section**: Prominent spotlight on the client's 70% commission model and direct 1-on-1 VIP host communication.
 - **"YOUR PLAYERS" WTF Games Perks**: Highlights 10% uncapped lossback, automatic VIP tier matching, high-value host care, and activity cash bonuses.
 - **"GROWTH & UPSIDE" Section**: Spotlights the client's exact phrase: *"not the ceiling as I grow we all grow."*
-- **Community Hub**: Features Kick, YouTube, Discord, Telegram, and X (Twitter) with direct action buttons.
+- **Community Hub**: Features Kick, YouTube, X (Twitter), Instagram, Discord, and Telegram with direct action buttons.
 - **Interactive FAQ**: Accordion answering visitor and player questions cleanly without invented facts.
 - **1-Click Email Copy**: Smooth clipboard copy with toast feedback.
 - **Responsible Gaming**: Built-in 18+ and BeGambleAware disclosures.

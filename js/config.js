@@ -22,6 +22,7 @@ const SITE_CONFIG = {
   kickUrl: "https://kick.com/itstimbob",
   youtubeUrl: "https://youtube.com/@itstimbob",
   xUrl: "https://x.com/ItsTimbob",
+  instagramUrl: "https://www.instagram.com/itstimbobofficial",
   discordUrl: "https://discord.gg/hKkG9NxuEg",
   telegramUrl: "https://t.me/+GjSgJUK0AUYxNmZh",
   

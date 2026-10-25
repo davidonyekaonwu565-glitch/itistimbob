@@ -40,6 +40,7 @@ function initSiteConfig() {
     'kick': cfg.kickUrl || 'https://kick.com/itstimbob',
     'youtube': cfg.youtubeUrl || 'https://youtube.com/@itstimbob',
     'x': cfg.xUrl,
+    'instagram': cfg.instagramUrl,
     'discord': cfg.discordUrl,
     'telegram': cfg.telegramUrl,
     'email': `mailto:${cfg.contactEmail}`
