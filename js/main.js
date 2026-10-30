@@ -9,6 +9,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initSiteConfig();
+  renderLeaderboardPrizes();
+  initPageTransitions();
   startHeroStatusRotator();
   initHeaderScroll();
   initKickLiveMonitor();
@@ -187,6 +189,35 @@ function initSiteConfig() {
 }
 
 /**
+ * Hydrates Leaderboard prizes from single shared source in SITE_CONFIG
+ */
+function renderLeaderboardPrizes() {
+  if (typeof window.SITE_CONFIG === 'undefined' || !window.SITE_CONFIG.leaderboard) return;
+  const cfg = window.SITE_CONFIG.leaderboard;
+  if (!Array.isArray(cfg.prizes)) return;
+
+  // Podium elements
+  const podium1st = document.querySelector('[data-podium-prize="1"]');
+  const podium2nd = document.querySelector('[data-podium-prize="2"]');
+  const podium3rd = document.querySelector('[data-podium-prize="3"]');
+  if (podium1st) podium1st.textContent = `$${cfg.prizes[0].prize}`;
+  if (podium2nd) podium2nd.textContent = `$${cfg.prizes[1].prize}`;
+  if (podium3rd) podium3rd.textContent = `$${cfg.prizes[2].prize}`;
+
+  // Positions 4 to 20 grid
+  const grid = document.getElementById('leaderboardPositionsGrid');
+  if (grid) {
+    const lowerPrizes = cfg.prizes.slice(3);
+    grid.innerHTML = lowerPrizes.map(p => `
+      <div class="position-item">
+        <span class="pos-rank">${p.label}</span>
+        <span class="pos-reward">${p.formatted}</span>
+      </div>
+    `).join('');
+  }
+}
+
+/**
  * Updates all status indicators to a single unified status:
  * 'Online' when live, or 'Offline' when inactive.
  */
@@ -348,34 +379,81 @@ function initScrollReveals() {
 }
 
 /**
- * Active Navigation Link Highlight on Scroll
+ * Page Transitions for seamless multi-page experience
+ */
+function initPageTransitions() {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.body.classList.add('page-loaded');
+
+  if (prefersReduced) return;
+
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('javascript:') || link.target === '_blank') return;
+
+    try {
+      const url = new URL(link.href, window.location.href);
+      if (url.origin === window.location.origin) {
+        e.preventDefault();
+        document.body.classList.add('page-exiting');
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 150);
+      }
+    } catch (_) {}
+  });
+}
+
+/**
+ * Active Navigation Link Highlight for both multi-page destinations and homepage sections
  */
 function initActiveNavHighlight() {
+  const currentPath = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
+  const navLinks = document.querySelectorAll('.nav-menu .nav-link, .mobile-nav-list .mobile-nav-link');
+
+  let matchedRoute = false;
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    
+    // Normalize href
+    const linkPath = href.replace(/\/index\.html$/, '').replace(/\/$/, '').replace(/^\.\.\/?/, '/') || '/';
+
+    if (currentPath === '/' && (linkPath === '/' || linkPath === '')) {
+      link.classList.add('active');
+      matchedRoute = true;
+    } else if (currentPath !== '/' && linkPath !== '/' && currentPath.includes(linkPath)) {
+      link.classList.add('active');
+      matchedRoute = true;
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // If on homepage with anchor sections, also track scroll position
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-menu .nav-link');
-  if (!sections.length || !navLinks.length) return;
+  if (currentPath === '/' && sections.length) {
+    const onScroll = () => {
+      const scrollPos = window.scrollY + 120;
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
 
-  const onScroll = () => {
-    const scrollPos = window.scrollY + 120;
-
-    sections.forEach(sec => {
-      const top = sec.offsetTop;
-      const height = sec.offsetHeight;
-      const id = sec.getAttribute('id');
-
-      if (scrollPos >= top && scrollPos < top + height) {
-        navLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${id}`) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
+        if (scrollPos >= top && scrollPos < top + height) {
+          const matchingLink = document.querySelector(`.nav-menu a[href="#${id}"]`);
+          if (matchingLink) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            matchingLink.classList.add('active');
           }
-        });
-      }
-    });
-  };
-
-  window.addEventListener('scroll', onScroll, { passive: true });
+        }
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
 }
 
 /**
@@ -537,8 +615,11 @@ function initAnimatedCounters() {
 
   function parseTarget(text) {
     const clean = text.trim();
+    // Match "$150", "$500", "$1,000+"
+    let m = clean.match(/^\$([0-9,]+)(\+?)$/);
+    if (m) return { start: 0, end: parseInt(m[1].replace(/,/g, ''), 10), prefix: '$', suffix: m[2] || '' };
     // Match "70%", "10%", "100%"
-    let m = clean.match(/^(\d+)(%)$/);
+    m = clean.match(/^(\d+)(%)$/);
     if (m) return { start: 0, end: parseInt(m[1], 10), prefix: '', suffix: '%' };
     // Match "3x", "3×"
     m = clean.match(/^(\d+)([x×])$/i);
