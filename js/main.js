@@ -45,7 +45,8 @@ function initSiteConfig() {
     'instagram': cfg.instagramUrl,
     'discord': cfg.discordUrl,
     'telegram': cfg.telegramUrl,
-    'email': `mailto:${cfg.contactEmail}`
+    'email': `mailto:${cfg.contactEmail}`,
+    'wtf': cfg.wtfReferralUrl || 'https://wtfgames.com/itstimbob'
   };
 
   Object.entries(linkMappings).forEach(([key, url]) => {
@@ -126,18 +127,19 @@ function initSiteConfig() {
   }
 
   // WTF Games CTA Link Handling with Fast "WTF" Letter-Loading Interaction
-  // Directly opens https://www.wtfgames.com in a new tab
+  // Directly opens canonical referral URL in a new tab
   const wtfElements = document.querySelectorAll('[data-config-link="wtf"]');
   wtfElements.forEach(el => {
-    el.removeAttribute('href');
+    const targetUrl = window.SITE_CONFIG?.wtfReferralUrl?.trim() || 'https://wtfgames.com/itstimbob';
+    el.setAttribute('href', targetUrl);
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
     el.style.cursor = 'pointer';
-    el.setAttribute('role', 'button');
-    el.setAttribute('tabindex', '0');
     
     const clickHandler = (e) => {
       e.preventDefault();
-      const targetUrl = window.SITE_CONFIG?.wtfReferralUrl?.trim() || 'https://www.wtfgames.com';
-      triggerWtfSequence(el, targetUrl);
+      const currentUrl = window.SITE_CONFIG?.wtfReferralUrl?.trim() || targetUrl;
+      triggerWtfSequence(el, currentUrl);
     };
 
     el.addEventListener('click', clickHandler);

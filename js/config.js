@@ -14,7 +14,7 @@ const SITE_CONFIG = {
 
   // WTF Games Referral Code & Link
   wtfReferralCode: "ItsTimbob",
-  wtfReferralUrl: "https://www.wtfgames.com", 
+  wtfReferralUrl: "https://wtfgames.com/itstimbob", 
 
   // Social & Community Channels
   kickUrl: "https://kick.com/itstimbob",
