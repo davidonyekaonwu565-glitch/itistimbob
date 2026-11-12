@@ -16,6 +16,9 @@ const SITE_CONFIG = {
   wtfReferralCode: "ItsTimbob",
   wtfReferralUrl: "https://wtfgames.com/itstimbob", 
 
+  // Official Leaderboard Link (WTF Rewards)
+  officialLeaderboardUrl: "https://wtfrewards.com/lb/timbob",
+
   // Social & Community Channels
   kickUrl: "https://kick.com/itstimbob",
   youtubeUrl: "https://youtube.com/@itstimbob",

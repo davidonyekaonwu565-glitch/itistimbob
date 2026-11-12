@@ -46,7 +46,8 @@ function initSiteConfig() {
     'discord': cfg.discordUrl,
     'telegram': cfg.telegramUrl,
     'email': `mailto:${cfg.contactEmail}`,
-    'wtf': cfg.wtfReferralUrl || 'https://wtfgames.com/itstimbob'
+    'wtf': cfg.wtfReferralUrl || 'https://wtfgames.com/itstimbob',
+    'official-leaderboard': cfg.officialLeaderboardUrl || 'https://wtfrewards.com/lb/timbob'
   };
 
   Object.entries(linkMappings).forEach(([key, url]) => {
